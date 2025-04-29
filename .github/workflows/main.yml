@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: abap2xlsx/abap2xlsx-rename-action@main
       with:
-        patterns: '[{"type": "CLAS|INTF", "oldName": "z(.*)_excel", "newName": "z$1_xls25"},{"type": "DTEL|DOMA|TABL|TTYP", "oldName": "zexcel_", "newName": "zxls25_"},{"type": "MSAG", "oldName": "zabap2xlsx", "newName": "zabap2xls25"}]'
+        patterns: '[{"type": "CLAS|INTF", "oldName": "z(.*)_excel", "newName": "Z$1_XLS25"},{"type": "DTEL|DOMA|TABL|TTYP", "oldName": "zexcel_", "newName": "ZXLS25_"},{"type": "MSAG", "oldName": "zabap2xlsx", "newName": "ZABAP2XLS25"}]'
     - run: git status
     - name: Open PR
       uses: peter-evans/create-pull-request@v5
